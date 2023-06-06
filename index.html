@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="colores.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Google Fake</title>
+</head>
+<body class="default">
+    
+    <nav>
+        <ul>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="navBar">Gmail</a></li>
+            <li><a href="https://www.google.cl/imghp?hl=es&tab=ri&ogbl" target="_blank" class="navBar">Imágenes</a></li>
+            <li><a href="#3"><i class="fa-sharp fa-solid fa-bars fa-2xl navBar" style="color: #ffffff;" ></i></a></li>
+            <li><a href="#4"><i class="fa-regular fa-circle-user fa-2xl navBar" style="color: #ffffff;" ></i></a></li>
+            
+        </ul>
+    </nav>
+
+
+    <h1>Google</h1>
+
+
+
+
+    <center>
+        <div class="busqueda">
+            <i class="fa-solid fa-magnifying-glass fa-sm lupa" style="color: #838383;"></i>
+            <input class="googlea" type="text" id="name" name="name" required
+            minlength="1" maxlength="999" size="60" autocomplete="url" placeholder="Buscar en Google o escribir una URL" >
+
+            <a href=""><i class="fa-solid fa-microphone fa-lg micro" style="color: #838383;"></i></a>
+        </div>
+    </center>
+
+
+    <div id="ventanaModal" class="modal">
+        <div class="modal-content">
+            
+            <p class="encabezado">Nombre</p><input type="text" id="nombreAtajo" class="inputModal"> <br>
+            <p class="encabezado">URL</p><input type="text" id="urlAtajo" class="inputModal"> <br>
+
+            <button class="botonModal" id="cancelar">Cancelar</button>
+            <button disabled class="botonModal" id="hecho">Hecho</button>
+
+        </div>
+      </div>    
+
+
+    
+<center>
+    <div class="atajos">
+        <div class="agregar " id="ModalBtn">
+            <div class="circulo "><i class="fa-solid fa-plus fa-lg iconoAgregar" style="color: #ffffff;"></i></div>
+            <p class="atajosA">Añadir atajo</p>
+        </div>
+
+    
+    </div>
+</center>
+
+
+
+<div class="colores" id="colores">
+    <div class="opcion" id="Rosa"></div> 
+    <div class="opcion" id="Turquesa"></div>
+    <div class="opcion" id="Blanco"></div>
+    <div class="opcion" id="Negro"></div>      
+</div>
+
+<div class="personalizar">
+    <button class="boton" id="personalizar"> <i class="fa-solid fa-pencil fa-lg lapiz" style="color: #ffffff;"></i> Personalizar Google</button>
+</div>
+
+    <script src="https://kit.fontawesome.com/b6f78bb9f2.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

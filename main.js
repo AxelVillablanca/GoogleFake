@@ -17,8 +17,22 @@ function crearElemento() {
     let circulo = document.createElement("div");
     circulo.classList.add("circulo");
 
-    let plus = document.createElement("i");
-    plus.classList.add("fa-solid", "fa-hand", "fa-lg", "iconoAgregar");
+
+    const plus = document.createElement("img");
+    const imgAtajo = urlAtajo;
+    Object.defineProperty(plus, "src", {
+      get: function () {
+        return this.getAttribute("src");
+      },
+      set: function (value) {
+        this.setAttribute("src", value);
+      },
+    });
+
+    plus.src = `https://s2.googleusercontent.com/s2/favicons?domain=${imgAtajo}&sz=28`;
+    plus.classList.add("iconoReal");
+
+    
     circulo.appendChild(plus);
 
     enlace.appendChild(circulo);
